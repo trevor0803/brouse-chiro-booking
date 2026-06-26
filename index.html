@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book an Appointment — Brouse Chiropractic &amp; Nutrition</title>
+<meta name="description" content="Book your appointment with Brouse Chiropractic & Nutrition in Ebensburg, PA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#13294b; --green:#5a8a3c; --ink:#16202e; --muted:#6b7891;
+    --paper:#f4f7fb; --line:#e4e8f0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:900px;margin:0 auto;padding:34px 20px 64px}
+  .head{text-align:center;margin:6px 0 26px}
+  .head img{height:58px;width:auto;margin:0 auto 18px;display:block}
+  .head h1{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(27px,4vw,36px);color:var(--navy);margin-bottom:8px}
+  .head p{color:var(--muted);font-size:16px}
+  .frame{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 14px 40px rgba(19,41,75,.12);overflow:hidden}
+  iframe#booking{width:100%;border:none;min-height:720px;display:block}
+  .callnote{text-align:center;margin-top:22px;font-size:15px;color:var(--muted)}
+  .callnote a{color:var(--navy);font-weight:600;text-decoration:none}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="head">
+      <img src="images/logo.webp" alt="Brouse Chiropractic &amp; Nutrition">
+      <h1>Book Your Appointment</h1>
+      <p>Pick a time that works for you — it only takes a minute.</p>
+    </div>
+    <div class="frame">
+      <iframe id="booking" src="https://api.leadconnectorhq.com/widget/bookings/brousechiropractic" scrolling="no"></iframe>
+    </div>
+    <p class="callnote">Prefer to call? <a href="tel:+18144729355">(814) 472-9355</a></p>
+  </div>
+  <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+</body>
+</html>
